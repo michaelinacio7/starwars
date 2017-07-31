@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="restapi">
+		<provider>org.hibernate.ejb.HibernatePersistence</provider>
+		<class>br.com.rest.domain.People</class>
+		<class>br.com.rest.domain.Starship</class>
+		<class>br.com.rest.domain.User</class>
+		<properties>
+			<property name="hibernate.connection.url" value=" jdbc:postgresql://localhost:5432/postgres" />
+			<property name="hibernate.connection.driver_class" value="org.postgresql.Driver" />
+			<property name="hibernate.connection.username" value="postgres" />
+			<property name="hibernate.connection.password" value="postgres" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" />
+			<property name="hibernate.show_sql" value="true" />
+			<property name="hibernate.formate_sql" value="true" />
+		</properties>
+
+	</persistence-unit>
+</persistence>

@@ -29,7 +29,7 @@ public abstract class Entidade implements Serializable {
 	@Override
 	public String toString() {
 		return getClass().getSimpleName() + "; ID = " + getId();
-	}
+	} 
 
 	@Override
 	public int hashCode() {

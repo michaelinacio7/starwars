@@ -2,7 +2,7 @@ package br.com.rest.domain;
 
 import java.io.Serializable;
 
-/**
+/**  
  * 
  * Classe de dominio
  * 

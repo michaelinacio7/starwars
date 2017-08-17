@@ -11,7 +11,7 @@ import br.com.rest.domain.Starship;
  * @author michael.inacio
  * 
  */
-
+ 
 public class StarshipDAO extends GenericDAO<Starship> {
 	
 	public Starship findByIdStarship(Integer idStarship, Integer idUser) {
